@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+body{
+  background-color: hsl(0, 1%, 71%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.logo img{
+  height: 15vh;
+  padding: 1rem;
+
+}
+.navbar{
+  background-color: hsl(0, 0%, 10%);
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 60px;
+  padding: 1rem;
+  border-radius: 3px;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar ul{
+  list-style: none;
+  display: flex;
+}
+.navbar ul li{
+  margin-left: 2rem;
+}
+.navbar ul li a{
+  color: rgb(200, 200, 3);
+  text-decoration: none;
+  font-size: 2rem;
+  text-align: center;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight:600;
+  transition: color 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar ul li a:hover{
+  color: hsl(60, 100%, 100%);
+  font-size: 2.1rem;
+  font-weight:700;
+}
+
+
+footer {
+  background-color: #282828; /* Dark background */
+  color: white; /* White text */
+  padding: 2rem 1rem; /* Padding around the footer */
+  text-align: center; /* Center text */
+}
+
+/* Footer Container for Flexbox */
+.footer-container {
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+/* Footer Logo Styling */
+.footer-logo {
+  font-size: 1.5rem; /* Logo size */
+  font-weight: bold; /* Bold text */
+  margin-bottom: 1rem; /* Space below the logo */
+}
+
+/* Footer Links Styling */
+.footer-links {
+  list-style: none; /* Remove bullet points */
+  margin-bottom: 1rem; /* Space below links */
+}
+
+.footer-links li {
+  display: inline; /* Display links in a row */
+  margin: 0 1rem; /* Space between links */
+}
+
+.footer-links a {
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* Link color */
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect for Links */
+.footer-links a:hover {
+  color: #ff6347; /* Change color on hover */
+}
+
+/* Footer Copyright Styling */
+.footer-copy {
+  margin-top: 1rem; /* Space above copyright */
+  font-size: 0.875rem; /* Smaller font size for copyright */
 }
